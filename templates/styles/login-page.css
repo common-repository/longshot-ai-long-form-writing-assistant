@@ -1,0 +1,222 @@
+main.longshot-ai {
+	display: flex;
+	justify-content: space-around;
+	margin-left: -20px;
+	flex-wrap: wrap;
+	--bg: #fff;
+	--brand-color: #6200ea;
+	--brand-light: #f7ebfd;
+}
+
+.longshot-ai header {
+	height: 46px;
+	padding: 5px 20px;
+	width: 100%;
+	background-color: var(--bg);
+	box-shadow: 2px 2px 15px 0 var(--brand-light);
+}
+
+.longshot-ai header a {
+	box-shadow: none;
+	outline: none;
+}
+
+.longshot-ai .image-wrapper img {
+	height: 36px;
+}
+
+.longshot-ai .card {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	max-width: 100vw;
+	font-size: 13px;
+	background-color: var(--bg);
+
+	/*box-shadow: 0 0 0.8em rgba(0, 0, 0, 0.2);*/
+	border-radius: 4px;
+	margin: 20px 0;
+	border: none;
+	box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+}
+
+.card h3 {
+	/*color: var(--brand-color);*/
+	font-size: 18px;
+	margin: 12px 0;
+}
+
+.card p {
+	font-size: 13px;
+	font-weight: 500;
+	margin: 0.5em 0;
+}
+
+.card .button {
+	background-color: var(--brand-color);
+	color: #fff;
+	border: 2px solid #fff;
+	font-size: 12px !important;
+	height: 30px !important;
+}
+
+.card .button:hover {
+	border-color: var(--brand-color);
+	background-color: var(--brand-color);
+}
+
+.button.connect-button {
+	align-self: center;
+	padding: 0.1em 2em !important;
+	height: unset !important;
+	font-size: 18px !important;
+	border-radius: 8px !important;
+}
+
+.tag {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 4px;
+	color: #fff;
+	font-weight: 600;
+	font-size: 0.9em;
+	padding: 0.2em 1em 0.2em 0.5em;
+	margin-bottom: 0.5em;
+	background-color: var(--tag-color);
+}
+
+.tag-red {
+	--tag-color: #ee6a5e;
+}
+
+.tag-green {
+	--tag-color: #58bb58;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+
+.content form {
+	display: flex;
+	flex-grow: 1;
+	gap: 1em;
+}
+
+.content a,
+.content input {
+	height: 35px;
+	border-radius: 4px !important;
+	text-align: center;
+	min-width: 100px;
+	padding: 0 20px;
+	width: max-content;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.login-card .message {
+	font-weight: bold;
+	text-align: center;
+	color: red;
+}
+
+.login-card .button-danger {
+	background-color: #f33;
+	color: #fff;
+	border-color: #f33;
+}
+
+.login-card .button-danger:hover,
+.login-card .button-danger:focus {
+	background-color: #f00;
+	color: #fff;
+	border-color: #f00;
+}
+
+#lsai-container {
+	margin-right: 16px;
+	padding: 20px 40px 0 40px;
+	width: 100%;
+}
+.more-items-container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	flex-grow: 1;
+	max-width: 100%;
+	min-width: 320px;
+}
+
+.more-items-container section.card {
+	width: calc(50% - 2em);
+	padding: 20px 1em;
+}
+
+.more-items-container.three .card {
+	max-width: min(31%, 100vw) !important;
+	width: 31%;
+}
+
+.more-items-container section.card h3 {
+	margin: 4px 0 !important;
+}
+
+section.card .content li,
+section.card .content li a {
+	display: flex;
+	flex-flow: column nowrap;
+	text-align: left;
+	text-decoration: none;
+	height: max-content;
+	padding: 4px 8px;
+	margin-bottom: 0 !important;
+}
+
+ul.content {
+	margin: 8px 0 0 0;
+}
+
+.content li:hover {
+	background-color: var(--brand-light) !important;
+}
+
+.content li a:hover .headline {
+	text-decoration: underline !important;
+}
+
+li.has-icon {
+	flex-flow: row !important;
+}
+
+li.has-icon .dashicons:first-child {
+	margin-right: 0.1em;
+	padding-top: 6px;
+}
+
+li .headline {
+	font-size: 13px;
+	color: #000;
+	font-weight: 500;
+}
+
+li .value {
+	font-size: 13px;
+	color: #0c0c0c;
+	font-weight: 400;
+}
+
+.content form a {
+	/* Fix: align vertically */
+	line-height: 30px !important;
+}
